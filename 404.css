@@ -1,0 +1,110 @@
+/* Se quita el margen y s pone color a toda la pagina*/
+body{
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+/*Aqui estariamos poniendo la barra de arriba, tambien el display flex, junto con la justificación
+manda el perfil hasta la derecha de la pagina*/
+.cabecera{
+    align-items: center;
+    background-color:#21c08b;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /*cambia tipo de letra, "etiqueta"*/
+    justify-content: space-between;
+    top: 0px;   
+}
+/*Este seria el tamaño de la imagen*/
+.cabecera__img{
+    width: 300px;
+    margin-left: 30px;
+}
+.Error{
+   /*sierve para dar dos colores a la pagina*/
+    background: linear-gradient(#21c08b, #ab88ff);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /*acomoda haciabajo, lo que allamos puesto en html*/
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+  }
+  .wrap {
+    margin: 0px auto;
+    width: 486px;
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border: none;
+    overflow: hidden;
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 56px;
+    color: #fff;
+    font-size: 1.0em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+  }
+ 
+  .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
+
+    .texto__segundo{
+    color: white;
+  }
+  
+.piedepagina{
+background-color: #ab88ff;
+display: flex;
+align-items: center; 
+height: 100px;
+width: 100%;
+}
+.piedepagina a{
+color: white;
+cursor: pointer;
+font-size: 14px;
+padding-left: 30px;
+text-decoration: none;
+}
+.piedepagina a:hover{
+text-decoration: underline;
+}
+/*sirve para la aparencia en telefonos moviles*/
+@media only screen and (max-width: 600px){
+.login__container{
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+}
+.footer{
+    align-items: flex-start;
+    flex-direction: column;
+}
+}
